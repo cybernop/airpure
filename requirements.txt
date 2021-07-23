@@ -1,0 +1,3 @@
+py-air-control>=2.2.0
+git+https://github.com/rgerganov/CoAPthon3
+prometheus-client>=0.11.0

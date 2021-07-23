@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    service:
+        image: airpure
+        build: .
+        environment:
+            - AIR_PUREFIER=192.168.25.48
+        ports:
+            - 8002:8000
+        restart: unless-stopped
