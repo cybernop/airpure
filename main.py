@@ -35,14 +35,9 @@ def get_stats(ip: str):
 def repeat(delay_secs: int, func, *args):
     while True:
         try:
-            start = datetime.now()
             func(*args)
 
-            end = datetime.now()
-            wait_time = delay_secs - (end-start).total_seconds()
-
-            if (wait_time > 0):
-                time.sleep(wait_time)
+            time.sleep(delay_secs)
         except KeyboardInterrupt:
             exit()
 
